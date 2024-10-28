@@ -1,0 +1,53 @@
+Model Selection and Architecture
+
+1. Model Selection
+Algorithm: ARIMA (Auto-Regressive Integrated Moving Average)
+Model Type: Time Series Forecasting (Captures trends, seasonality, and residual patterns)
+
+2. Model Components
+a) Trend Component:AR (Auto-Regressive) Component: Captures the dependence between an observation and a number of lagged observations.
+I (Integrated) Component: Captures the trend in the series by differencing.
+MA (Moving Average) Component: Captures the relationship between an observation and residual errors from a moving average model applied to lagged observations.
+b) Seasonality and Differencing:Configurable differencing to achieve stationarity if needed.
+Option to use seasonal differencing for monthly, weekly, or custom seasonal patterns.
+
+3. Model Parameters
+p (Auto-Regressive Order): Number of lag observations included in the model
+d (Differencing Order): Number of times the raw observations are differenced
+q (Moving Average Order): Size of the moving average window
+Seasonal Parameters (if seasonal ARIMA): (P, D, Q, m), where m is the season length
+Optimization Technique: Maximum likelihood estimation for parameter tuning
+
+4. Data Preprocessing Steps
+Date Parsing and Formatting
+Missing Value Imputation
+Outlier Detection and Handling
+Feature Engineering:
+Day of week
+Month
+Is weekend
+Peak/Off-peak indicators
+
+5. Model Evaluation Metrics
+Mean Absolute Error (MAE)
+Root Mean Square Error (RMSE)
+Mean Absolute Percentage Error (MAPE)
+AIC/BIC (Akaike/Bayesian Information Criterion) for model selection
+
+6. Forecast Output
+Point Forecasts: Based on historical trends and seasonality
+Confidence Intervals: Prediction intervals for each forecasted value
+Daily Granularity: Forecast for each day
+7-day Forecast Horizon for short-term predictions
+
+7. Model Limitations and Assumptions
+Stationarity Assumption: Assumes stationarity in time series data; differencing applied as needed
+Limited to Historical Patterns: May not capture abrupt changes or unobserved external factors
+Sufficient Historical Data Required: Model accuracy depends on quality and length of historical data
+Assumes Regular Seasonality Patterns
+
+8. Implementation Notes
+Python Implementation: Using statsmodels or pmdarima for ARIMA model
+Parameter Selection: Automated model selection using AIC/BIC or manual selection of (p, d, q)
+Separate Models for Each Service Type: Each service type analyzed independently
+Forecasts with Confidence Intervals: Includes prediction intervals
