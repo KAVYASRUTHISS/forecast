@@ -1,0 +1,88 @@
+ACT Public Transport Data Analysis Report
+=======================================
+
+Project Name: Forecast
+Date (Analysis): 28.10.2024
+Dataset: Daily Public Transport Passenger Journeys
+Time Period: Analyzed over 15-20 minutes
+
+1. Overall Ridership Patterns
+Average Daily Passengers (Local Route): 9,891
+Average Daily Passengers (Light Rail): 7,195
+Average Daily Passengers (Peak Service): 180
+Average Daily Passengers (Rapid Route): 12,597
+Average Daily Passengers (School): 2,353
+Average Daily Passengers (Other): 43
+
+Peak Day: 30/08/2024 (with 16,436 passengers on the Local Route)
+Maximum Daily Passengers: 21,070 on Local Route
+
+2. Service Type Analysis
+Most Popular Service: Local Route
+Service Distribution:
+- Local Route: 9,891 (Average)
+- Light Rail: 7,195 (Average)
+- Peak Service: 180 (Average)
+- Rapid Route: 12,597 (Average)
+- School: 2,353 (Average)
+- Other: 43 (Average)
+
+3. Peak vs Off-Peak Analysis
+Peak Hour Usage: (Data needs to be evaluated based on time data; ensure time column is included)
+Peak vs Off-Peak Average Passengers:
+- Peak: [Insert peak average passengers if time data is included]
+- Off-peak: [Insert off-peak average passengers if time data is included]
+
+4. Weekly Patterns
+Busiest Day: [Insert busiest day based on the analysis of the 'Day' column]
+Weekend vs Weekday Average:
+- Weekend: [Insert weekend average passengers]
+- Weekday: [Insert weekday average passengers]
+
+5. Seasonal Patterns
+Busiest Month: [Insert busiest month based on the analysis of the 'Month' column]
+
+Additional Observations:
+- The dataset contains 1,918 entries across 7 columns.
+- Notable missing values exist in the 'Other' column, which has 2 missing entries.
+
+Summary Statistics:
+Local Route: 
+  - Mean: 9,891
+  - Std Dev: 6,121
+  - Min: 1
+  - Max: 21,070
+
+Light Rail: 
+  - Mean: 7,195
+  - Std Dev: 3,346
+  - Min: 0
+  - Max: 15,154
+
+Peak Service: 
+  - Mean: 180
+  - Std Dev: 157
+  - Min: 0
+  - Max: 1,029
+
+Rapid Route: 
+  - Mean: 12,597
+  - Std Dev: 6,720
+  - Min: 0
+  - Max: 28,678
+
+School: 
+  - Mean: 2,353
+  - Std Dev: 2,495
+  - Min: 0
+  - Max: 7,255
+
+Other: 
+  - Mean: 43
+  - Std Dev: 42
+  - Min: 0
+  - Max: 1,105
+
+Future Recommendations:
+- Consider investigating the patterns in the 'Other' service category as it may reflect trends or anomalies.
+- Further analysis on peak and off-peak hours should be conducted for a more comprehensive understanding of ridership trends.
